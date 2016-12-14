@@ -16,6 +16,7 @@ public class MainGenerator {
         entity.addStringProperty("last_name").notNull();
         entity.addStringProperty("email").notNull();
         new DaoGenerator().generateAll(schema,"./app/src/main/java");
+        //pushing changes
 
 
 
