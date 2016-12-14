@@ -13,6 +13,9 @@ public class MainGenerator {
         Entity entity = schema.addEntity("User");
         entity.addIdProperty();
         entity.addStringProperty("first_name").notNull();
+        entity.addStringProperty("last_name").notNull();
+        entity.addStringProperty("email").notNull();
+        new DaoGenerator().generateAll(schema,"./app/src/main/java");
 
 
 
