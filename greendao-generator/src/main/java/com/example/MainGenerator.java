@@ -12,7 +12,7 @@ public class MainGenerator {
         Entity entity = schema.addEntity("User");
         entity.addIdProperty();
         entity.addStringProperty("first_name").notNull();
-        
+
 
 
 
